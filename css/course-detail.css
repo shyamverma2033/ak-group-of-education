@@ -146,10 +146,21 @@
   border: 1px solid var(--ios-border);
   border-radius: var(--radius-md);
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .info-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: normal;
+  }
 }
 
 .info-table th, .info-table td {
-  padding: 1rem 1.15rem;
+  padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--ios-border);
   text-align: left;
 }

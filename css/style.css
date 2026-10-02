@@ -84,9 +84,9 @@ html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden !important;
-  overflow-x: clip !important;
   width: 100% !important;
   max-width: 100% !important;
+  box-sizing: border-box;
 }
 
 body {
@@ -99,12 +99,11 @@ body {
   padding-bottom: 96px;
   /* Generous clearance for mobile floating dock */
   overflow-x: hidden !important;
-  overflow-x: clip !important;
   width: 100% !important;
   max-width: 100% !important;
+  margin: 0 !important;
   position: relative;
-  touch-action: pan-y !important;
-  /* Rigid lock: only allow vertical touch gestures, eliminates horizontal random slide */
+  box-sizing: border-box;
 }
 
 @media (min-width: 992px) {
@@ -225,17 +224,17 @@ h4 {
   line-height: 1.65;
 }
 
-/* --- Apple / iOS Buttons (Zero Sharp Edges) --- */
+/* --- Apple / iOS Buttons (Zero Sharp Edges, Luxurious Micro-Physics) --- */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.55rem;
   padding: 0.85rem 1.6rem;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.94rem;
   border-radius: var(--radius-pill);
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   cursor: pointer;
   transition: all var(--transition-ios);
   text-align: center;
@@ -244,73 +243,91 @@ h4 {
   line-height: 1.35;
   box-sizing: border-box;
   max-width: 100%;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 .btn-primary {
   background-color: var(--ios-navy);
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(15, 34, 74, 0.18);
+  border: 1.5px solid rgba(197, 151, 40, 0.35);
+  box-shadow: 0 4px 14px rgba(11, 25, 56, 0.2);
 }
 
 .btn-primary:hover {
   background-color: var(--ios-navy-light);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(15, 34, 74, 0.24);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(11, 25, 56, 0.28);
 }
 
 .btn-blue {
   background-color: var(--ios-blue);
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.22);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.22);
 }
 
 .btn-blue:hover {
   background-color: var(--ios-blue-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0, 113, 227, 0.32);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(2, 132, 199, 0.32);
 }
 
 .btn-whatsapp {
   background-color: var(--ios-whatsapp);
   color: #FFFFFF;
+  font-weight: 700;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
 }
 
 .btn-whatsapp:hover {
   background-color: #20BA5A;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.35);
 }
 
 .btn-outline {
-  background-color: transparent;
-  border: 1px solid var(--ios-border);
-  color: var(--ios-text-primary);
+  background-color: #FFFFFF;
+  border: 1.5px solid rgba(197, 151, 40, 0.42);
+  color: var(--ios-navy);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(11, 25, 56, 0.05);
 }
 
 .btn-outline:hover {
-  background-color: var(--ios-secondary-bg);
-  border-color: var(--ios-border-hover);
+  background-color: var(--ios-gold-soft);
+  border-color: var(--ios-gold);
+  color: var(--ios-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(197, 151, 40, 0.2);
 }
 
 .btn-secondary {
   background-color: var(--ios-secondary-bg);
   color: var(--ios-text-primary);
-  border: 1px solid transparent;
+  border: 1.5px solid var(--ios-border);
+  font-weight: 600;
 }
 
 .btn-secondary:hover {
-  background-color: #EAEAEF;
+  background-color: #E2E8F0;
+  border-color: rgba(197, 151, 40, 0.3);
 }
 
 .btn-sm {
   padding: 0.55rem 1.15rem;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
+  line-height: 1.3;
 }
 
 .btn-lg {
-  padding: 1rem 2.2rem;
-  font-size: 1.05rem;
+  padding: 0.95rem 1.8rem;
+  font-size: 0.98rem;
+  line-height: 1.35;
 }
 
 .btn-full {
@@ -376,30 +393,34 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1.5px solid rgba(197, 151, 40, 0.28);
-  box-shadow: 0 4px 20px rgba(11, 25, 56, 0.06);
+  border-bottom: 1.5px solid rgba(197, 151, 40, 0.32);
+  box-shadow: 0 4px 20px rgba(11, 25, 56, 0.08);
   transition: all var(--transition-ios);
-  padding: 0.65rem 0;
+  padding: 0.85rem 0;
   display: flex;
   align-items: center;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .site-header.scrolled {
   background: rgba(255, 255, 255, 0.99);
-  box-shadow: 0 8px 30px rgba(11, 25, 56, 0.12);
+  box-shadow: 0 8px 30px rgba(11, 25, 56, 0.14);
   border-bottom-color: rgba(197, 151, 40, 0.45);
-  padding: 0.5rem 0;
+  padding: 0.65rem 0;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  gap: 1.25rem;
+  width: 100% !important;
+  max-width: var(--container-max);
+  gap: 1rem;
+  box-sizing: border-box !important;
 }
 
 .brand-logo-wrap {
@@ -407,7 +428,7 @@ h4 {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
-  flex-shrink: 0;
+  flex: 1;
   min-width: 0;
   padding: 2px 0;
 }
@@ -432,20 +453,20 @@ h4 {
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  line-height: 1.15;
+  line-height: 1.25;
 }
 
 .brand-title {
   font-family: var(--font-heading);
-  font-size: clamp(0.94rem, 1.45vw, 1.18rem);
+  font-size: clamp(0.92rem, 1.45vw, 1.18rem);
   font-weight: 800;
   color: var(--ios-navy);
-  line-height: 1.15;
-  letter-spacing: 0.03em;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding: 2px 0;
 }
 
 .brand-subtext {
@@ -584,26 +605,38 @@ h4 {
   transform: translateY(-1px);
 }
 
-/* Mobile Toggle Hamburger */
+/* Mobile Toggle Hamburger (Approachable, Tactile, High-Contrast) */
 .mobile-toggle-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   background: var(--ios-secondary-bg);
-  border: 1px solid var(--ios-border);
+  border: 1.5px solid rgba(197, 151, 40, 0.45);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  padding: 8px;
+  padding: 10px 8px;
   flex-shrink: 0;
   transition: all var(--transition-ios);
+  box-shadow: 0 2px 8px rgba(11, 25, 56, 0.08);
 }
 
 .mobile-toggle-btn:hover {
   background: #E5E9F0;
   border-color: var(--ios-gold);
+  transform: translateY(-1px);
+}
+
+.mobile-toggle-btn span {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background-color: var(--ios-navy);
+  border-radius: 9999px;
+  transition: all 0.2s ease;
 }
 
 @media (min-width: 1080px) {
@@ -612,78 +645,90 @@ h4 {
   }
 }
 
-.mobile-toggle-btn span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--ios-text-primary);
-  border-radius: 2px;
-  transition: all 0.2s ease;
-}
+/* Responsive Header Safeguards:
+   1. On screens below 1080px, remove header buttons completely so brand text has 100% breathing space
+   2. Ensure the mobile menu toggle is prominent, approachable in size (44x44px), tactile, and always visible
+   3. Provide generous vertical clearance so uppercase text never cuts from the top edge
+*/
+@media (max-width: 1079px) {
+  .site-header {
+    padding: 0.85rem 0 !important;
+  }
 
-/* Responsive Header Safeguards (Zero text clipping, zero border collisions) */
-@media (max-width: 991px) {
+  .nav-menu {
+    display: none !important;
+  }
 
   .nav-action-pill .btn,
   .nav-action-pill .btn-gold,
-  .header-cta-desktop {
+  .nav-action-pill .btn-primary,
+  .nav-action-pill .header-cta-desktop,
+  .nav-action-pill .nav-call-link {
     display: none !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .site-header {
-    padding: 0.5rem 0;
-  }
-
-  .nav-container {
-    gap: 0.5rem;
-    justify-content: space-between;
-  }
-
-  .brand-logo-wrap {
-    gap: 0.65rem;
-    flex-shrink: 0;
-    max-width: calc(100% - 46px);
-  }
-
-  .brand-logo-img {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-  }
-
-  .brand-title {
-    font-size: clamp(0.82rem, 3.6vw, 0.98rem);
-    letter-spacing: 0.01em;
-    white-space: nowrap;
-  }
-
-  .brand-subtext {
-    font-size: 0.62rem;
-    letter-spacing: 0.03em;
-    white-space: nowrap;
   }
 
   .nav-action-pill {
-    gap: 0;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+    gap: 0 !important;
   }
 
   .mobile-toggle-btn {
-    width: 38px;
-    height: 38px;
-    padding: 8px;
+    display: flex !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    background: #F1F4F9 !important;
+    border: 1.5px solid rgba(197, 151, 40, 0.45) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(11, 25, 56, 0.1) !important;
+    cursor: pointer !important;
+    padding: 0 !important;
   }
-}
 
-@media (max-width: 480px) {
-  .brand-subtext {
-    display: none;
-    /* Hide subtitle on compact phones so title stays on 1 unclipped line */
+  .mobile-toggle-btn span {
+    display: block !important;
+    width: 22px !important;
+    height: 2.5px !important;
+    background-color: var(--ios-navy) !important;
+    border-radius: 9999px !important;
+  }
+
+  .brand-logo-wrap {
+    gap: 0.7rem;
+    flex: 1;
+    min-width: 0;
+    max-width: calc(100% - 56px);
+  }
+
+  .brand-logo-img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
   }
 
   .brand-title {
-    font-size: clamp(0.82rem, 4vw, 0.95rem);
+    font-size: clamp(0.85rem, 3.8vw, 1.05rem);
+    letter-spacing: 0.015em;
+    white-space: nowrap;
+    line-height: 1.4;
+    padding: 3px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-subtext {
+    display: none !important;
+    /* Clean 1-line brand title on compact smartphones prevents all vertical & horizontal squeeze */
+  }
+
+  .brand-title {
+    font-size: clamp(0.84rem, 4.2vw, 0.98rem);
   }
 
   .brand-logo-img {
@@ -695,6 +740,126 @@ h4 {
   .brand-logo-wrap {
     gap: 0.55rem;
   }
+}
+
+/* --- Apple iOS Executive Cards & High-Converting Buttons --- */
+.ios-hero-card {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1.5px solid rgba(197, 151, 40, 0.4);
+  box-shadow: 0 16px 40px rgba(11, 25, 56, 0.12);
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  transition: transform var(--transition-ios), box-shadow var(--transition-ios);
+}
+
+.ios-hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(11, 25, 56, 0.16);
+  border-color: var(--ios-gold);
+}
+
+.ios-hero-card img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .ios-hero-card img {
+    height: 330px;
+  }
+}
+
+.ios-counsellor-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(197, 151, 40, 0.45);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 8px 24px rgba(7, 13, 29, 0.18);
+  box-sizing: border-box;
+}
+
+.ios-badge-avatar {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--ios-gold) !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.ios-badge-name {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.02rem;
+  color: var(--ios-navy);
+  line-height: 1.2;
+}
+
+.ios-badge-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ios-gold-dark);
+  line-height: 1.25;
+  margin-top: 2px;
+}
+
+/* Apple iOS Pill Button for Cards (Punchy, Zero Overflow, Micro-Physics) */
+.btn-ios-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(197, 151, 40, 0.45);
+  color: var(--ios-navy);
+  font-weight: 700;
+  font-size: 0.88rem;
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.15rem;
+  transition: all var(--transition-ios);
+  box-shadow: 0 2px 8px rgba(11, 25, 56, 0.05);
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-ios-pill:hover {
+  background: var(--ios-navy);
+  color: #FFFFFF;
+  border-color: var(--ios-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(11, 25, 56, 0.18);
+}
+
+.btn-ios-pill .btn-arrow {
+  color: var(--ios-gold);
+  font-weight: 800;
+  transition: transform var(--transition-ios);
+}
+
+.btn-ios-pill:hover .btn-arrow {
+  color: #FCE082;
+  transform: translateX(3px);
 }
 
 /* Mobile Drawer (iOS Sheet Style) */
@@ -912,6 +1077,110 @@ h4 {
   margin-bottom: 1.75rem;
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+/* Creative Hero Interactive Widgets */
+.hero-interactive-streams {
+  margin: 1.15rem 0 1.35rem 0;
+  width: 100%;
+}
+
+.hero-streams-label {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ios-gold-dark);
+  margin-bottom: 0.55rem;
+}
+
+.hero-stream-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.hero-quick-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #FFFFFF;
+  border: 1.5px solid rgba(197, 151, 40, 0.35);
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ios-navy);
+  cursor: pointer;
+  transition: all var(--transition-ios);
+  box-shadow: 0 2px 6px rgba(11, 25, 56, 0.04);
+}
+
+.hero-quick-pill:hover {
+  background: var(--ios-gold-soft);
+  border-color: var(--ios-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 151, 40, 0.2);
+}
+
+.hero-quick-pill .pill-icon {
+  font-size: 0.95rem;
+}
+
+.hero-glass-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.65rem;
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  .hero-glass-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.hero-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid rgba(197, 151, 40, 0.3);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.8rem;
+  box-shadow: 0 2px 8px rgba(11, 25, 56, 0.04);
+}
+
+.hero-feature-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.hero-feature-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.hero-feature-text strong {
+  font-size: 0.82rem;
+  color: var(--ios-navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-feature-text span {
+  font-size: 0.72rem;
+  color: var(--ios-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero-trust-bullets {
@@ -1874,18 +2143,11 @@ body {
 
 .infographic-scroll-wrap svg,
 .infographic-scroll-wrap img {
-  min-width: 720px;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (min-width: 992px) {
-
-  .infographic-scroll-wrap svg,
-  .infographic-scroll-wrap img {
-    min-width: 100%;
-  }
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  display: block !important;
 }
 
 /* --- Stream Showcase Media Cards --- */
@@ -2572,8 +2834,23 @@ body {
 
 /* ==========================================================================
    GLOBAL MOBILE VIEWPORT & ZERO-OVERFLOW SAFEGUARDS
-   Ensures zero horizontal blowout on any mobile device from 320px to 4K
+   Ensures zero horizontal blowout, zero right-side gap on any device (320px to 4K)
    ========================================================================== */
+section,
+header,
+footer,
+main,
+.container,
+.site-header,
+.ios-hero,
+.statutory-ribbon {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  min-width: 0 !important;
+}
+
 .infographic-card,
 .comparison-card,
 .assessment-studio-wrap,
@@ -2582,17 +2859,37 @@ body {
 .ios-card,
 .course-card-stream,
 .stream-visual-card {
+  width: 100% !important;
   max-width: 100% !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
+  min-width: 0 !important;
 }
 
 .infographic-scroll-wrap,
 .comparison-table-wrap {
   width: 100% !important;
   max-width: 100% !important;
+  box-sizing: border-box !important;
   overflow-x: auto !important;
   -webkit-overflow-scrolling: touch !important;
+  display: block !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 768px) {
+  /* Prevent desktop 720px/1000px SVG infographic from blowing out mobile viewport */
+  .infographic-scroll-wrap svg,
+  .infographic-scroll-wrap img {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .comparison-table {
+    min-width: 520px !important;
+  }
 }
 
 @media (max-width: 600px) {

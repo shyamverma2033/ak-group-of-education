@@ -91,10 +91,48 @@
         </ul>
       </nav>
       <div class="nav-action-pill">
-        <button type="button" class="btn btn-primary btn-sm" onclick="openLeadModal('BCA / IT Pathways')">Get Counselling</button>
+        <button type="button" class="btn btn-primary btn-sm header-cta-desktop" onclick="openLeadModal('BCA / IT Pathways')">Get Counselling</button>
+        <button type="button" class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer Sheet -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-title" style="font-size: 1rem;">A K GROUP OF EDUCATION</span>
+        <span class="brand-subtext">Lakhisarai, Bihar</span>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#courses">All 16 Degree Streams</a></li>
+      <li><a href="../about.html">About Counsellor</a></li>
+      <li><a href="bca.html">BCA &amp; IT</a></li>
+      <li><a href="btech.html">B.Tech Engineering</a></li>
+      <li><a href="mbbs.html">MBBS Medical</a></li>
+      <li><a href="nursing.html">B.Sc Nursing</a></li>
+      <li><a href="bpharm.html">B.Pharm Pharmacy</a></li>
+      <li><a href="bds.html">BDS Dental</a></li>
+      <li><a href="../contact.html">Visit Lakhisarai Office</a></li>
+    </ul>
+    <div class="mobile-drawer-actions">
+      <button type="button" class="btn btn-gold btn-full" onclick="openLeadModal('BCA / IT Pathways')">
+        Get BCA &amp; IT Counselling
+      </button>
+      <a href="https://api.whatsapp.com/send?phone=919205125001&text=Hello%20A%20K%20Group%20of%20Education%2C%20I%20would%20like%20admission%20counselling."
+        target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
 
   <section class="course-hero">
     <div class="container">
@@ -109,8 +147,8 @@
             Comprehensive admission guidance for Bachelor of Computer Applications (BCA) and structured career skill orientation mapping into 24 distinct private jobs and self-employment avenues (कम्प्यूटर सीखने के बाद प्राइवेट जॉब या स्वरोजगार).
           </p>
           <div style="display: flex; gap: 0.85rem; margin-top: 1.75rem; flex-wrap: wrap;">
-            <button type="button" class="btn btn-primary" onclick="openLeadModal('BCA / IT Pathways')">Get Counselling for IT</button>
-            <button type="button" class="btn btn-whatsapp" data-course-whatsapp="BCA">Chat on WhatsApp for BCA</button>
+            <button type="button" class="btn btn-primary" onclick="openLeadModal('BCA / IT Pathways')"><span>Apply for BCA / IT</span> <span style="color: #FCE082;">→</span></button>
+            <button type="button" class="btn btn-whatsapp" data-course-whatsapp="BCA"><span>💬 WhatsApp Guidance</span></button>
           </div>
           <div class="course-hero-meta">
             <div class="hero-meta-item">

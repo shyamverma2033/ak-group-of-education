@@ -1,0 +1,224 @@
+/* ==========================================================================
+   COURSE DETAIL PAGES STYLESHEET - APPLE iOS CLEAN HUMAN INTERFACE
+   A K Group of Education
+   ========================================================================== */
+
+.course-hero {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--ios-bg) 100%);
+  color: var(--ios-text-primary);
+  padding: 4rem 0 4.5rem 0;
+  position: relative;
+  border-bottom: 1px solid var(--ios-border);
+}
+
+.course-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ios-text-tertiary);
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.course-breadcrumb a {
+  color: var(--ios-text-secondary);
+}
+
+.course-breadcrumb a:hover {
+  color: var(--ios-blue);
+}
+
+.course-breadcrumb span {
+  color: var(--ios-text-primary);
+  font-weight: 600;
+}
+
+.course-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .course-hero-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.course-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--ios-border);
+}
+
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hero-meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ios-text-tertiary);
+  font-weight: 700;
+}
+
+.hero-meta-val {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ios-navy);
+}
+
+/* Course Layout with Sticky Sidebar */
+.course-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .course-layout-grid {
+    grid-template-columns: 1fr 380px;
+    gap: 3.5rem;
+  }
+}
+
+.course-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.content-block {
+  background: #FFFFFF;
+  border: 1px solid var(--ios-border);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem 2.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+.content-block h2 {
+  font-size: 1.55rem;
+  margin-bottom: 1.25rem;
+  color: var(--ios-navy);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.content-block h3 {
+  font-size: 1.2rem;
+  margin: 1.75rem 0 0.85rem 0;
+  color: var(--ios-text-primary);
+}
+
+.content-block p {
+  color: var(--ios-text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.content-block ul, .content-block ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: var(--ios-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+  border: 1px solid var(--ios-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.info-table th, .info-table td {
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--ios-border);
+  text-align: left;
+}
+
+.info-table th {
+  background-color: var(--ios-secondary-bg);
+  font-weight: 700;
+  color: var(--ios-text-primary);
+}
+
+.info-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Sticky Counselling Sidebar */
+.course-sidebar {
+  position: relative;
+}
+
+.sticky-sidebar-card {
+  position: sticky;
+  top: 90px;
+  background: #FFFFFF;
+  border: 1px solid var(--ios-border);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ios-border);
+}
+
+.counsellor-lead-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--ios-secondary-bg);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ios-navy);
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--ios-border);
+}
+
+.sidebar-phone-box {
+  background: var(--ios-secondary-bg);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.sidebar-phone-box .phone-label {
+  font-size: 0.75rem;
+  color: var(--ios-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.sidebar-phone-box .phone-num {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ios-navy);
+}

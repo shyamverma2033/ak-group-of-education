@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE082" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA821C" />
+      <stop offset="100%" stop-color="#E5C158" />
+    </linearGradient>
+    <linearGradient id="silverWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D16" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Text Paths -->
+    <path id="topTextArc" d="M 85,250 A 165,165 0 0,1 415,250" fill="none" />
+    <path id="bottomTextArc" d="M 415,250 A 165,165 0 0,1 85,250" fill="none" />
+  </defs>
+
+  <!-- Background Base Outer Ring -->
+  <circle cx="250" cy="250" r="240" fill="#0B132B" stroke="url(#goldGrad)" stroke-width="5" />
+  
+  <!-- Intricate Patterned Border Ring -->
+  <circle cx="250" cy="250" r="228" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4,4" />
+  <circle cx="250" cy="250" r="218" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" />
+
+  <!-- Circular Outer Text Band -->
+  <circle cx="250" cy="250" r="215" fill="none" stroke="url(#goldGrad)" stroke-width="1" />
+  <circle cx="250" cy="250" r="162" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+
+  <!-- Outer Text: A K GROUP OF EDUCATION -->
+  <text font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="27" font-weight="900" fill="url(#goldGrad)" letter-spacing="7">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      AK GROUP OF EDUCATION
+    </textPath>
+  </text>
+
+  <!-- Bottom Tagline: YOUR FUTURE, OUR PASSION -->
+  <text font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="19" font-weight="700" fill="url(#goldGrad)" letter-spacing="5">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+      YOUR FUTURE, OUR PASSION
+    </textPath>
+  </text>
+
+  <!-- Decorative Stars on Text Arc Separators -->
+  <polygon points="76,250 81,253 79,258 84,255 88,259 87,253 92,250 87,247 88,241 84,245 79,242 81,247" fill="url(#goldGrad)" />
+  <polygon points="410,250 415,253 413,258 418,255 422,259 421,253 426,250 421,247 422,241 418,245 413,242 415,247" fill="url(#goldGrad)" />
+
+  <!-- Inner Center Disc -->
+  <circle cx="250" cy="250" r="158" fill="url(#innerGlow)" stroke="url(#goldGrad)" stroke-width="3" filter="url(#shadow)" />
+  <circle cx="250" cy="250" r="152" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.6" />
+
+  <!-- Mortarboard (Graduation Cap) -->
+  <g transform="translate(0, -10)">
+    <!-- Cap Diamond -->
+    <polygon points="250,140 315,162 250,184 185,162" fill="#E2E8F0" stroke="url(#goldGrad)" stroke-width="2" />
+    <polygon points="250,145 305,162 250,179 195,162" fill="#FFFFFF" opacity="0.9" />
+    <!-- Cap Skull Base -->
+    <path d="M 210,172 L 210,192 C 210,205 290,205 290,192 L 290,172 Z" fill="#94A3B8" stroke="url(#goldGrad)" stroke-width="1.5" />
+    <!-- Tassel -->
+    <path d="M 250,162 Q 285,168 318,198" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="318" cy="198" r="3" fill="#D4AF37" />
+    <polygon points="316,198 320,198 322,216 314,216" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Student Silhouette Bust -->
+  <g transform="translate(0, 10)">
+    <!-- Head -->
+    <circle cx="250" cy="205" r="22" fill="#E2E8F0" stroke="url(#goldGrad)" stroke-width="1" />
+    <!-- Neck -->
+    <path d="M 242,224 L 258,224 L 260,238 L 240,238 Z" fill="#CBD5E1" />
+    <!-- Shoulders / Torso -->
+    <path d="M 200,285 C 200,250 220,238 250,238 C 280,238 300,250 300,285 Z" fill="#E2E8F0" stroke="url(#goldGrad)" stroke-width="1" />
+  </g>
+
+  <!-- Winged Emblems (Left and Right) -->
+  <!-- Left Wing -->
+  <g fill="url(#silverWing)" stroke="url(#goldGrad)" stroke-width="1" opacity="0.95">
+    <path d="M 195,248 C 160,225 125,235 110,255 C 135,255 160,265 190,272 Z" />
+    <path d="M 192,260 C 155,245 128,260 115,280 C 140,275 165,282 188,285 Z" />
+    <path d="M 188,274 C 155,270 135,285 125,302 C 148,295 170,296 186,295 Z" />
+  </g>
+  <!-- Right Wing -->
+  <g fill="url(#silverWing)" stroke="url(#goldGrad)" stroke-width="1" opacity="0.95">
+    <path d="M 305,248 C 340,225 375,235 390,255 C 365,255 340,265 310,272 Z" />
+    <path d="M 308,260 C 345,245 372,260 385,280 C 360,275 335,282 312,285 Z" />
+    <path d="M 312,274 C 345,270 365,285 375,302 C 352,295 330,296 314,295 Z" />
+  </g>
+
+  <!-- Center Crest Oval with 'AK' Monogram -->
+  <g transform="translate(0, 10)">
+    <ellipse cx="250" cy="305" rx="46" ry="38" fill="#0B132B" stroke="url(#goldGrad)" stroke-width="3" filter="url(#shadow)" />
+    <ellipse cx="250" cy="305" rx="41" ry="33" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2,2" />
+    <!-- Monogram Text: AK -->
+    <text x="250" y="316" font-family="'Cinzel', 'Georgia', serif" font-size="34" font-weight="900" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">
+      AK
+    </text>
+  </g>
+
+  <!-- Subtle Laurel Leaves Underneath Crest -->
+  <path d="M 195,350 Q 250,380 305,350" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="250" cy="366" r="3.5" fill="url(#goldGrad)" />
+</svg>

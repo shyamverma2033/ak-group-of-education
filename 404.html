@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | A K Group of Education</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error-hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .error-card {
+      background: var(--ios-card-bg);
+      border: 1px solid var(--ios-border);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-elevated);
+      max-width: 620px;
+      width: 100%;
+      padding: 3rem 2rem;
+    }
+    .error-code {
+      display: inline-block;
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: var(--ios-navy);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .error-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      background: #FEE2E2;
+      color: #DC2626;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+    .error-title {
+      font-size: 1.6rem;
+      color: var(--ios-text-primary);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .error-desc {
+      font-size: 1.02rem;
+      color: var(--ios-text-secondary);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-quick-links {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--ios-border);
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-chip {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ios-navy);
+      background: var(--ios-secondary-bg);
+      border: 1px solid var(--ios-border);
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+    .error-chip:hover {
+      background: #FFFFFF;
+      border-color: var(--ios-navy);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Clean iOS Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap" title="A K Group of Education">
+        <img src="images/logo.svg" alt="A K Group Logo" class="brand-logo-img" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">A K Group of Education</span>
+          <span class="brand-subtext">Admission in India &amp; Abroad</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Counsellor</a></li>
+          <li><a href="index.html#courses" class="nav-link">Courses</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-action-pill">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openLeadModal('General')">
+          Free Consultation
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="error-hero">
+    <div class="error-card">
+      <div class="error-code">404</div>
+      <div>
+        <span class="error-badge">Page Not Found / पृष्ठ नहीं मिला</span>
+      </div>
+      <h1 class="error-title">Looking for Admission Guidance?</h1>
+      <p class="error-desc">
+        The admission page you are looking for has been moved, renamed, or is currently unavailable. Don't worry, our counsellors are here to guide you directly.
+      </p>
+
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">
+          Back to Homepage
+        </a>
+        <button type="button" class="btn btn-whatsapp" onclick="triggerCourseWhatsApp('General Admission')">
+          Chat on WhatsApp
+        </button>
+      </div>
+
+      <div class="error-quick-links">
+        <span style="width: 100%; font-size: 0.8rem; color: var(--ios-text-secondary); margin-bottom: 0.25rem;">Popular Admission Pathways:</span>
+        <a href="courses/btech.html" class="error-chip">B.Tech Engineering</a>
+        <a href="courses/nursing.html" class="error-chip">B.Sc Nursing</a>
+        <a href="courses/bpharm.html" class="error-chip">B.Pharm</a>
+        <a href="courses/mbbs.html" class="error-chip">MBBS India &amp; Abroad</a>
+        <a href="courses/bca.html" class="error-chip">BCA &amp; IT</a>
+        <a href="courses/bds.html" class="error-chip">BDS Dental</a>
+        <a href="contact.html" class="error-chip">Lakhisarai Office</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+        <div>&copy; 2025–2026 A K Group of Education. All rights reserved.</div>
+        <div class="footer-credit">
+          Website Designed &amp; Developed with <span class="footer-credit-heart">❤</span> by <strong>Team Krishna Createss</strong>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Disclaimer</a>
+          <a href="contact.html">Contact Office</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/counselling-form.js"></script>
+</body>
+</html>

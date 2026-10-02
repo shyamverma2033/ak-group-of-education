@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>About Us | A K Group of Education | All Courses Admission Counselling</title>
+  <meta name="description"
+    content="A K Group of Education provides trusted, transparent admission counselling for B.Tech, M.Tech, MBBS, B.Sc Nursing, B.Pharm, Law (LLB), MBA, and all professional degrees. Direct mentorship by Ashutosh Kumar in Lakhisarai, Bihar.">
+  <link rel="canonical" href="https://akgroupofeducation.com/about.html">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Course Category Segment Tabs */
+    .stream-filter-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .stream-filter-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .stream-filter-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .course-badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.85rem 0 1.25rem 0;
+    }
+
+    .course-mini-chip {
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background-color: var(--ios-secondary-bg);
+      color: var(--ios-text-primary);
+      border: 1px solid var(--ios-border);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       PRE-HEADER TOPBAR (HIGH-CONVERTING HELPLINE & LOCATION)
+       ========================================================================= -->
+  <div class="header-topbar">
+    <div class="container header-topbar-content">
+      <div class="header-topbar-left">
+        <span>📍 Naya Bazar, Patel Nagar, Lakhisarai, Bihar</span>
+        <span class="topbar-badge">🎓 Admissions Open 2025–26</span>
+      </div>
+      <div class="header-topbar-right">
+        <a href="tel:+919205125001" title="Call Chief Counsellor Ashutosh Kumar">
+          <span>📞 Helpline:</span> <strong>+91 9205125001</strong>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=919205125001&text=Hello%20A%20K%20Group%20of%20Education%2C%20I%20would%20like%20admission%20counselling."
+          target="_blank" rel="noopener">
+          <span>💬 WhatsApp:</span> <strong>+91 8651296795</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CLEAN APPLE-INSPIRED HEADER (NO CONTACT OVERLOAD)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap" title="A K Group of Education - Lakhisarai, Bihar">
+        <img src="images/logo.svg" alt="A K Group of Education Logo" class="brand-logo-img" width="44" height="44">
+        <div class="brand-text">
+          <span class="brand-title">A K GROUP OF EDUCATION</span>
+          <span class="brand-subtext">Govt. Verified Admissions • Lakhisarai</span>
+        </div>
+      </a>
+
+      <!-- Clean Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#courses" class="nav-link">16 Streams <span class="nav-link-badge">Official</span></a></li>
+          <li><a href="about.html" class="nav-link active">About Counsellor</a></li>
+          <li><a href="index.html#why-choose-us" class="nav-link">Why Us</a></li>
+          <li><a href="contact.html" class="nav-link">Lakhisarai Office</a></li>
+        </ul>
+      </nav>
+
+      <!-- Single Sleek Action Pill -->
+      <div class="nav-action-pill">
+        <a href="tel:+919205125001" class="nav-call-link" title="Call Helpline">
+          <span class="nav-live-dot"></span>
+          <span>+91 9205125001</span>
+        </a>
+        <button type="button" class="btn btn-gold btn-sm header-cta-desktop" onclick="openLeadModal('General')">
+          Free Consultation
+        </button>
+        <button type="button" class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Sheet -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-title" style="font-size: 1rem;">A K GROUP OF EDUCATION</span>
+        <span class="brand-subtext">Lakhisarai, Bihar</span>
+      </div>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#courses">All 16 Degree Streams</a></li>
+      <li><a href="about.html">About &amp; Mentorship</a></li>
+      <li><a href="index.html#process">Why Trust Us</a></li>
+      <li><a href="contact.html">Visit Lakhisarai Office</a></li>
+    </ul>
+    <div class="mobile-drawer-actions">
+      <button type="button" class="btn btn-gold btn-full" onclick="openLeadModal('General')">
+        Get Free Counselling
+      </button>
+      <a href="https://api.whatsapp.com/send?phone=919205125001&text=Hello%20A%20K%20Group%20of%20Education%2C%20I%20would%20like%20admission%20counselling."
+        target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO SECTION (Clean, Generous Whitespace, Zero Overlaps)
+       ========================================================================= -->
+  <section class="ios-hero">
+    <div class="container">
+      <div class="ios-hero-grid">
+
+        <!-- Left Content -->
+        <div class="ios-hero-content">
+          <span class="section-label">Established in Lakhisarai, Bihar</span>
+
+          <h1 class="ios-hero-title">
+            Admission Guidance for <span class="gradient-text">Every Career Stream</span>
+          </h1>
+
+          <p class="ios-hero-desc">
+            Led by <strong>Ashutosh Kumar</strong>, A K Group of Education provides unbiased, merit-based admission
+            counselling across India and recognized international universities. From <strong>B.Tech and M.Tech</strong>
+            to <strong>Nursing, Pharmacy, Law, Management, Medical, and Vocational IT</strong>, we help families make
+            informed, secure decisions.
+          </p>
+
+          <div class="ios-hero-cta-row">
+            <button type="button" class="btn btn-primary btn-lg" onclick="openLeadModal('All Courses')">
+              Get 1-on-1 Guidance
+            </button>
+            <a href="https://api.whatsapp.com/send?phone=919205125001&text=Hello%20A%20K%20Group%20of%20Education%2C%20I%20would%20like%20to%20know%20more%20about%20admission%20counselling."
+              target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+              WhatsApp Counsellor
+            </a>
+          </div>
+
+          <!-- Discrete Trust Metrics -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <h4>All Streams</h4>
+              <p>Engineering, Medical, Law, Nursing &amp; MBA</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>100% Verified</h4>
+              <p>AICTE, UGC, BCI, NMC, PCI &amp; INC Approved</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>Direct Access</h4>
+              <p>Personal sessions with Ashutosh Kumar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content: Clean Portrait Card (Zero Floating Overlaps) -->
+        <div class="ios-hero-card">
+          <img src="images/counsellor-ashutosh.jpg" alt="Ashutosh Kumar, Chief Educational Counsellor" width="500"
+            height="500">
+          <div class="ios-counsellor-badge">
+            <img src="images/counsellor-ashutosh.jpg" alt="Ashutosh Kumar" class="ios-badge-avatar" width="46"
+              height="46">
+            <div>
+              <div class="ios-badge-name">Ashutosh Kumar</div>
+              <div class="ios-badge-role">Chief Educational Counsellor • Lakhisarai Office</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMPREHENSIVE ALL-COURSES ADMISSION MATRIX (HIGH-CONVERTING)
+       ========================================================================= -->
+  <section class="section section-white" id="all-courses">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">All Disciplines Covered</span>
+        <h2>Explore Admission Opportunities by Stream</h2>
+        <p>
+          Whether you are targeting central universities, state counseling, autonomous institutes, or private
+          institutions, explore verified career pathways below.
+        </p>
+      </div>
+
+      <!-- Stream Cards Grid -->
+      <div class="stream-filter-grid">
+
+        <!-- 1. Engineering & Technology -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Terminal / Code SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="2" y="4" width="20" height="16" rx="4"></rect>
+              <path d="M7 10l3 2-3 2M13 14h4"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Engineering &amp; Tech</span>
+          <h3>B.Tech, M.Tech &amp; BCA</h3>
+          <p>
+            Choice-filling and seat allocation assistance across Computer Science, AI &amp; Machine Learning, Data
+            Science, Electronics, Mechanical, and Civil Engineering.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">B.Tech (4 Yrs)</span>
+            <span class="course-mini-chip">M.Tech (2 Yrs)</span>
+            <span class="course-mini-chip">Polytechnic Diploma</span>
+            <span class="course-mini-chip">BCA / MCA</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('B.Tech & Engineering')">
+              Get Engineering Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Nursing & Healthcare -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Heart / Clinical SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+              </path>
+            </svg>
+          </div>
+          <span class="course-pill">Nursing Sciences</span>
+          <h3>B.Sc Nursing &amp; GNM</h3>
+          <p>
+            INC-approved colleges with 100+ bed hospital training, guaranteeing clinical patient bedside experience and
+            overseas licensing support (UK, Canada, Gulf).
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">B.Sc Nursing (4 Yrs)</span>
+            <span class="course-mini-chip">GNM (3 Yrs)</span>
+            <span class="course-mini-chip">Post Basic B.Sc</span>
+            <span class="course-mini-chip">M.Sc Nursing</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('Nursing (B.Sc / GNM)')">
+              Get Nursing Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Pharmacy & Pharmaceutical Sciences -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Medicine / Capsule SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M10.5 20.5l10-10a4.95 4.95 0 10-7-7l-10 10a4.95 4.95 0 107 7zM8.5 8.5l7 7"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Pharmaceutical</span>
+          <h3>B.Pharm &amp; D.Pharm</h3>
+          <p>
+            PCI-approved colleges enabling retail drug licenses, pharma manufacturing careers, quality control, and
+            eligibility for Government Drug Inspector roles.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">B.Pharm (Degree)</span>
+            <span class="course-mini-chip">D.Pharm (Diploma)</span>
+            <span class="course-mini-chip">Pharm.D</span>
+            <span class="course-mini-chip">M.Pharm</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('Pharmacy (B.Pharm / D.Pharm)')">
+              Get Pharmacy Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Law & Legal Studies -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Scales / Legal SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M12 3v18M3 9l9-6 9 6M6 15l-3-6h6l-3 6a3 3 0 01-3 3M18 15l-3-6h6l-3 6a3 3 0 01-3 3"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Legal Studies</span>
+          <h3>LLB &amp; BA/BBA LLB</h3>
+          <p>
+            BCI-recognized law faculties across India for corporate legal advisory, judicial services preparation, civil
+            litigation, and international arbitration.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">3-Yr LLB (Graduates)</span>
+            <span class="course-mini-chip">5-Yr BA LLB</span>
+            <span class="course-mini-chip">5-Yr BBA LLB</span>
+            <span class="course-mini-chip">LLM</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm" onclick="openLeadModal('Law (LLB / BA LLB)')">
+              Get Law Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Management & Commerce -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Briefcase / Management SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="2" y="7" width="20" height="14" rx="3"></rect>
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Management</span>
+          <h3>MBA, PGDM &amp; BBA</h3>
+          <p>
+            Counselling for AICTE &amp; UGC-recognized business schools specializing in Marketing, Finance, HR, Business
+            Analytics, and Logistics.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">MBA (Dual Spec)</span>
+            <span class="course-mini-chip">PGDM</span>
+            <span class="course-mini-chip">BBA (3 Yrs)</span>
+            <span class="course-mini-chip">B.Com (Hons)</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('Management (MBA / BBA)')">
+              Get MBA Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Paramedical & Allied Health -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Medical Cross / Shield SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M12 2v20M2 12h20"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Allied Health</span>
+          <h3>Paramedical &amp; Physiotherapy</h3>
+          <p>
+            High-employability allied health courses: BPT (Physiotherapy), Medical Lab Technology (BMLT), Radiology
+            &amp; Imaging, and Operation Theatre Technology.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">BPT (Physiotherapy)</span>
+            <span class="course-mini-chip">BMLT (Lab Tech)</span>
+            <span class="course-mini-chip">B.Sc Radiology</span>
+            <span class="course-mini-chip">OTT &amp; Dialysis</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm" onclick="openLeadModal('Paramedical & BPT')">
+              Get Paramedical Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. Medical & AYUSH -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Stethoscope SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4.5 3v5a4 4 0 008 0V3M18 10v3a6 6 0 01-12 0M18 10a2 2 0 100-4 2 2 0 000 4z"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Medical &amp; Ayush</span>
+          <h3>MBBS, BDS, BAMS &amp; BHMS</h3>
+          <p>
+            NEET UG counseling across Central, State Quota, and Deemed medical colleges in India, plus NMC
+            FMGL-compliant medical universities abroad.
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">MBBS India</span>
+            <span class="course-mini-chip">MBBS Abroad</span>
+            <span class="course-mini-chip">BDS (Dental)</span>
+            <span class="course-mini-chip">BAMS / BHMS</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm" onclick="openLeadModal('MBBS & Medical')">
+              Get Medical Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Education & Teaching -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Book Open SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+              </path>
+            </svg>
+          </div>
+          <span class="course-pill">Teacher Training</span>
+          <h3>B.Ed &amp; D.El.Ed</h3>
+          <p>
+            NCTE-approved teacher training colleges for primary and secondary government school teacher eligibility
+            (CTET, STET, BPSC Teacher exams).
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">B.Ed (2 Yrs)</span>
+            <span class="course-mini-chip">D.El.Ed (2 Yrs)</span>
+            <span class="course-mini-chip">Integrated B.Ed</span>
+            <span class="course-mini-chip">M.Ed</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('B.Ed & Teacher Education')">
+              Get Teaching Guidance →
+            </button>
+          </div>
+        </div>
+
+        <!-- 9. Vocational Computer Skills (24 Pathways) -->
+        <div class="ios-card">
+          <div class="ios-card-icon">
+            <!-- Laptop / Monitor SVG Icon -->
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="2" y="3" width="20" height="14" rx="3"></rect>
+              <path d="M8 21h8M12 17v4"></path>
+            </svg>
+          </div>
+          <span class="course-pill">Career Skills</span>
+          <h3>24 IT &amp; Self-Employment Tracks</h3>
+          <p>
+            Practical job-ready IT pathways: Web Design, Video Editing, Data Analytics, SEO, Digital Marketing Agency,
+            and Cyber Centers (स्वरोजगार एवं प्राइवेट जॉब विकल्प).
+          </p>
+          <div class="course-badge-list">
+            <span class="course-mini-chip">Data Analytics</span>
+            <span class="course-mini-chip">Web Design</span>
+            <span class="course-mini-chip">Digital Agency</span>
+            <span class="course-mini-chip">IT Support</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 1rem;">
+            <button type="button" class="btn btn-outline btn-full btn-sm"
+              onclick="openLeadModal('IT Skills & 24 Pathways')">
+              Get IT Skills Guidance →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- On-Theme Academic Discipline Visual Showcase -->
+      <div class="stream-visual-grid">
+        <div class="stream-visual-card">
+          <img src="images/tech-lab.jpg"
+            alt="Engineering and computer science students collaborating in advanced technology lab" width="600"
+            height="240" loading="lazy">
+          <div class="stream-visual-body">
+            <span class="course-pill">Engineering &amp; Technology</span>
+            <h3>Modern Laboratories &amp; Technical Excellence</h3>
+            <p>
+              We guide students toward institutions featuring AI incubation centers, advanced robotics and IoT labs, and
+              active corporate hiring pipelines for Computer Science, AIML, and Core branches.
+            </p>
+            <div style="margin-top: auto;">
+              <button type="button" class="btn btn-outline btn-full btn-sm"
+                onclick="openLeadModal('B.Tech Engineering')">
+                Explore Engineering Colleges →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stream-visual-card">
+          <img src="images/nursing-lab.jpg" alt="Nursing and healthcare students during clinical simulation training"
+            width="600" height="240" loading="lazy">
+          <div class="stream-visual-body">
+            <span class="course-pill">Healthcare Sciences</span>
+            <h3>Clinical Training &amp; Hospital Attachments</h3>
+            <p>
+              For Nursing, Pharmacy, and Allied Health programs, we strictly verify parent hospital bed capacities, ICU
+              rotation schedules, and PCI/INC approvals to ensure high clinical competence.
+            </p>
+            <div style="margin-top: auto;">
+              <button type="button" class="btn btn-outline btn-full btn-sm" onclick="openLeadModal('B.Sc Nursing')">
+                Explore Healthcare Colleges →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informative Infographic: Statutory Councils in India -->
+      <div class="infographic-card">
+        <div class="infographic-header">
+          <span class="section-label">Statutory Verification</span>
+          <h3>Regulatory Accreditation Standards</h3>
+          <p>
+            Every degree program we counsel for is strictly validated against statutory government bodies to ensure full
+            validity for government jobs, licensing, and higher studies.
+          </p>
+        </div>
+        <div class="infographic-scroll-wrap">
+          <img src="images/infographic-statutory-bodies.svg"
+            alt="Infographic of statutory bodies in India: AICTE, NMC, INC, PCI, BCI, UGC" width="1000" height="240">
+        </div>
+      </div>
+
+      <!-- Stage-by-Stage Flowchart Infographic -->
+      <div class="infographic-card">
+        <div class="infographic-header">
+          <span class="section-label">Step-by-Step Methodology</span>
+          <h3>End-to-End Counselling &amp; Allocation Pipeline</h3>
+          <p>
+            A systematic, transparent process to guide you safely from initial evaluation to campus enrollment.
+          </p>
+        </div>
+        <div class="infographic-scroll-wrap">
+          <img src="images/infographic-counselling-flow.svg" alt="Step by step counselling flowchart" width="1000"
+            height="320">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT ASHUTOSH KUMAR & LAKHISARAI HEADQUARTERS
+       ========================================================================= -->
+  <section class="section section-subtle" id="mentorship">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Founding Vision</span>
+        <h2>About Ashutosh Kumar &amp; A K Group of Education</h2>
+        <p>
+          Headquartered in <strong>Naya Bazar, Patel Nagar, Lakhisarai, Bihar</strong>, we were established to provide a
+          trusted, ethical anchor for families seeking authentic higher education counsel.
+        </p>
+      </div>
+
+      <div class="ios-grid ios-grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <h3 style="margin-bottom: 1rem; color: var(--ios-navy);">Direct, Accountable Mentorship</h3>
+          <p style="margin-bottom: 1.25rem; color: var(--ios-text-secondary); line-height: 1.75;">
+            "Higher education in India has become unnecessarily complex. Between changing cutoff percentiles, multiple
+            rounds of central and state counseling, and misleading marketing from unverified agents, parents and
+            students frequently lose both money and crucial academic years.
+          </p>
+          <p style="margin-bottom: 1.25rem; color: var(--ios-text-secondary); line-height: 1.75;">
+            At A K Group of Education, we operate on three unbreakable rules: <strong>complete statutory
+              transparency</strong>, <strong>realistic cutoff calculation</strong>, and <strong>zero unauthorized
+              donation fees</strong>. Every student who consults with us is treated as family."
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <button type="button" class="btn btn-primary" onclick="openLeadModal('General Consultation')">
+              Schedule Discussion with Ashutosh Kumar
+            </button>
+            <a href="contact.html" class="btn btn-outline">
+              Office Location &amp; Directions
+            </a>
+          </div>
+        </div>
+
+        <div
+          style="background: #FFFFFF; border: 1px solid var(--ios-border); border-radius: var(--radius-xl); padding: 2rem;">
+          <h4 style="margin-bottom: 1.25rem; color: var(--ios-navy);">Office Location &amp; Working Desk</h4>
+          <ul
+            style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; color: var(--ios-text-secondary);">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--ios-blue); font-weight: 700;">📍</span>
+              <div>
+                <strong>Head Office Address:</strong><br>
+                Naya Bazar, Patel Nagar, Lakhisarai, Bihar – 811311
+              </div>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--ios-green); font-weight: 700;">🕒</span>
+              <div>
+                <strong>Office Visiting Hours:</strong><br>
+                Monday – Saturday: 9:30 AM to 7:00 PM<br>
+                <small style="color: var(--ios-text-tertiary);">Sunday: Open by prior appointment</small>
+              </div>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--ios-navy); font-weight: 700;">🛡️</span>
+              <div>
+                <strong>Statutory Accreditation Focus:</strong><br>
+                We counsel exclusively for AICTE, UGC, BCI, NMC, PCI, and INC approved colleges.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HIGH-CONVERTING LEAD GENERATION FORM (iOS CARD STYLE)
+       ========================================================================= -->
+  <section class="section section-white" id="enquire">
+    <div class="container" style="max-width: 860px;">
+
+      <div class="ios-lead-card">
+        <div class="ios-lead-header">
+          <span class="section-label">Fast Consultation</span>
+          <h3>Request Personal Admission Counselling</h3>
+          <p>
+            Share your academic background and preferred course. Ashutosh Kumar will evaluate your eligibility and
+            connect directly.
+          </p>
+        </div>
+
+        <form class="counselling-enquiry-form" id="aboutPageLeadForm">
+          <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group-ios">
+                <label>Student Full Name <span style="color: #FF3B30;">*</span></label>
+                <input type="text" name="student_name" class="form-control-ios" placeholder="e.g. Aman Sharma" required>
+              </div>
+              <div class="form-group-ios">
+                <label>Parent / Guardian Name</label>
+                <input type="text" name="parent_name" class="form-control-ios" placeholder="e.g. Ramesh Sharma">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group-ios">
+                <label>Mobile Number <span style="color: #FF3B30;">*</span></label>
+                <input type="tel" name="mobile" class="form-control-ios" placeholder="10-digit number" required
+                  pattern="[0-9]{10}">
+              </div>
+              <div class="form-group-ios">
+                <label>WhatsApp Number</label>
+                <input type="tel" name="whatsapp" class="form-control-ios" placeholder="If different">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group-ios">
+                <label>Select Desired Course <span style="color: #FF3B30;">*</span></label>
+                <select name="course" class="form-control-ios" required>
+                  <option value="">-- Choose Course --</option>
+                  <option value="B.Tech (Engineering)">B.Tech (Computer Science / AI / Core)</option>
+                  <option value="M.Tech">M.Tech (Engineering)</option>
+                  <option value="Polytechnic Diploma">Polytechnic / Diploma Engineering</option>
+                  <option value="B.Sc Nursing">B.Sc Nursing</option>
+                  <option value="GNM Nursing">GNM (General Nursing)</option>
+                  <option value="B.Pharm">B.Pharm (Degree)</option>
+                  <option value="D.Pharm">D.Pharm (Diploma)</option>
+                  <option value="LLB (3 Years)">LLB (3-Year Law)</option>
+                  <option value="BA LLB / BBA LLB">BA LLB / BBA LLB (5-Year Integrated)</option>
+                  <option value="MBA / PGDM">MBA / PGDM</option>
+                  <option value="BBA">BBA (Management)</option>
+                  <option value="BCA / MCA">BCA / MCA (Computer Applications)</option>
+                  <option value="MBBS (India)">MBBS (India)</option>
+                  <option value="MBBS (Abroad)">MBBS (Abroad - NMC Compliant)</option>
+                  <option value="BDS">BDS (Dental Surgery)</option>
+                  <option value="BAMS / BHMS">BAMS / BHMS (AYUSH)</option>
+                  <option value="Paramedical / BPT">Paramedical (BPT / BMLT / OTT)</option>
+                  <option value="B.Ed / D.El.Ed">B.Ed / D.El.Ed (Teaching)</option>
+                  <option value="24 IT Skill Pathways">24 IT &amp; Self-Employment Tracks</option>
+                </select>
+              </div>
+
+              <div class="form-group-ios">
+                <label>Exam Appeared &amp; Score / 12th %</label>
+                <input type="text" name="score_rank" class="form-control-ios"
+                  placeholder="e.g. JEE 82%, NEET 450, or 12th 74%">
+              </div>
+            </div>
+
+            <div class="form-group-ios">
+              <label>Preferred State / Location / Budget Preferences</label>
+              <textarea name="message" class="form-control-ios" style="min-height: 80px; resize: vertical;"
+                placeholder="Tell us if you have any preferred states (Bihar, UP, Karnataka, Delhi-NCR, Abroad), fee budget, or quota requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 0.5rem;">
+              Submit &amp; Open WhatsApp with Counsellor
+            </button>
+
+            <div style="font-size: 0.8rem; color: var(--ios-text-tertiary); text-align: center; margin-top: 0.5rem;">
+              🔒 Your contact number is strictly confidential and used solely for admission guidance.
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CLEAN APPLE-STYLE FAQ ACCORDION
+       ========================================================================= -->
+  <section class="section section-subtle">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Clarity &amp; Facts</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Direct answers regarding counseling procedures, entrance requirements, and institutional fees.</p>
+      </div>
+
+      <div class="ios-faq-list">
+
+        <div class="ios-faq-item active">
+          <button type="button" class="ios-faq-btn">
+            <span>What courses does A K Group of Education provide counselling for?</span>
+            <span class="ios-faq-icon">↓</span>
+          </button>
+          <div class="ios-faq-content" style="max-height: 250px;">
+            <p>We provide comprehensive counselling across virtually all recognized higher education programs:
+              <strong>Engineering</strong> (B.Tech, M.Tech, Polytechnic), <strong>Medical &amp; Dental</strong> (MBBS,
+              BDS, BAMS, BHMS), <strong>Nursing &amp; Pharmacy</strong> (B.Sc Nursing, GNM, B.Pharm, D.Pharm),
+              <strong>Law</strong> (LLB, BA LLB), <strong>Management</strong> (MBA, BBA), <strong>Allied
+                Health/Paramedical</strong> (BPT, BMLT), <strong>Teaching</strong> (B.Ed, D.El.Ed), and
+              <strong>Vocational IT</strong>.</p>
+          </div>
+        </div>
+
+        <div class="ios-faq-item">
+          <button type="button" class="ios-faq-btn">
+            <span>Can I get admission in B.Tech or B.Sc Nursing without high entrance exam marks?</span>
+            <span class="ios-faq-icon">↓</span>
+          </button>
+          <div class="ios-faq-content">
+            <p>Yes. Many premier NAAC 'A' grade autonomous institutes and recognized state universities admit students
+              through institutional merit counseling and state board marks (10+2 PCM/PCB). We help identify legitimate,
+              approved colleges aligned with your actual percentage and budget.</p>
+          </div>
+        </div>
+
+        <div class="ios-faq-item">
+          <button type="button" class="ios-faq-btn">
+            <span>Do students pay tuition fees directly to the college?</span>
+            <span class="ios-faq-icon">↓</span>
+          </button>
+          <div class="ios-faq-content">
+            <p><strong>Always.</strong> All tuition, examination, and hostel fees are deposited directly to the official
+              bank accounts of the allotted university/college or state counseling authority. A K Group does not accept
+              tuition money or charge backdoor donation fees.</p>
+          </div>
+        </div>
+
+        <div class="ios-faq-item">
+          <button type="button" class="ios-faq-btn">
+            <span>How do I meet Ashutosh Kumar in person?</span>
+            <span class="ios-faq-icon">↓</span>
+          </button>
+          <div class="ios-faq-content">
+            <p>You can visit our registered office at <strong>Naya Bazar, Patel Nagar, Lakhisarai, Bihar</strong> during
+              working hours (Monday to Saturday, 9:30 AM to 7:00 PM). We recommend scheduling an appointment via
+              WhatsApp or phone so the counselor is readily available for an in-depth review of your marksheets.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CLEAN FOOTER
+       ========================================================================= -->
+  <footer class="ios-footer">
+    <div class="container">
+      <div class="ios-footer-grid">
+        <div>
+          <div class="brand-logo-wrap" style="margin-bottom: 0.75rem;">
+            <img src="images/logo.svg" alt="A K Group of Education" class="brand-logo-img" width="40" height="40">
+            <span class="brand-title">A K Group of Education</span>
+          </div>
+          <p style="color: var(--ios-text-tertiary); font-size: 0.88rem; line-height: 1.6; max-width: 340px;">
+            An ethical educational counselling consultancy based in Lakhisarai, Bihar. Guiding students into recognized
+            degree programs across India and internationally.
+          </p>
+        </div>
+
+        <div class="ios-footer-col">
+          <h4>Program Streams</h4>
+          <ul class="ios-footer-links">
+            <li><a href="#all-courses">B.Tech &amp; Engineering</a></li>
+            <li><a href="#all-courses">B.Sc Nursing &amp; GNM</a></li>
+            <li><a href="#all-courses">B.Pharm &amp; D.Pharm</a></li>
+            <li><a href="#all-courses">Law (LLB &amp; BA LLB)</a></li>
+            <li><a href="#all-courses">MBA &amp; BBA</a></li>
+            <li><a href="#all-courses">MBBS &amp; Medical</a></li>
+          </ul>
+        </div>
+
+        <div class="ios-footer-col">
+          <h4>Navigation</h4>
+          <ul class="ios-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Counsellor</a></li>
+            <li><a href="contact.html">Lakhisarai Office</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="ios-footer-col">
+          <h4>Lakhisarai Office</h4>
+          <p style="font-size: 0.88rem; color: var(--ios-text-secondary); line-height: 1.6;">
+            Naya Bazar, Patel Nagar,<br>
+            Lakhisarai, Bihar – 811311<br>
+            Founder: Ashutosh Kumar<br>
+            Helplines: +91 9205125001 / +91 8651296795
+          </p>
+        </div>
+      </div>
+
+      <div class="ios-footer-bottom">
+        <div>
+          &copy; 2025–2026 A K Group of Education. All Rights Reserved.
+        </div>
+        <div class="footer-credit">
+          Website Designed &amp; Developed with <span class="footer-credit-heart">❤</span> by <strong>Team Krishna
+            Createss</strong>
+        </div>
+        <div style="display: flex; gap: 1.25rem;">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Statutory Disclaimer</a>
+          <a href="contact.html">Contact Office</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MOBILE FLOATING iOS DOCK
+       ========================================================================= -->
+  <aside class="ios-floating-dock" aria-label="Mobile Navigation Dock">
+    <a href="tel:+919205125001" class="dock-btn call">
+      <span>📞 Call</span>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=919205125001&text=Hello%20A%20K%20Group%20of%20Education%2C%20I%20would%20like%20admission%20counselling."
+      target="_blank" rel="noopener" class="dock-btn whatsapp">
+      <span>💬 WhatsApp</span>
+    </a>
+    <button type="button" class="dock-btn enquire" onclick="openLeadModal('General')">
+      <span>📝 Enquire</span>
+    </button>
+  </aside>
+
+  <!-- =========================================================================
+       CLEAN MODAL POPUP
+       ========================================================================= -->
+  <div class="ios-modal-backdrop" id="iosLeadModalBackdrop" role="dialog" aria-modal="true">
+    <div class="ios-modal">
+      <button type="button" class="ios-modal-close" onclick="closeLeadModal()">&times;</button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-label" style="font-size: 0.72rem;">1-on-1 Mentorship</span>
+        <h3 style="font-size: 1.4rem; color: var(--ios-navy); margin-top: 0.35rem;">
+          Get Admission Counselling
+        </h3>
+        <p style="font-size: 0.88rem; color: var(--ios-text-secondary);">
+          Direct consultation with Counsellor Ashutosh Kumar. All information remains 100% confidential.
+        </p>
+      </div>
+
+      <form class="counselling-enquiry-form" id="modalPopupLeadForm">
+        <div class="form-group-ios">
+          <label>Student Full Name <span style="color: #FF3B30;">*</span></label>
+          <input type="text" name="student_name" class="form-control-ios" placeholder="Full name" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group-ios">
+            <label>Mobile Number <span style="color: #FF3B30;">*</span></label>
+            <input type="tel" name="mobile" class="form-control-ios" placeholder="10-digit mobile" required
+              pattern="[0-9]{10}">
+          </div>
+          <div class="form-group-ios">
+            <label>WhatsApp Number</label>
+            <input type="tel" name="whatsapp" class="form-control-ios" placeholder="WhatsApp number">
+          </div>
+        </div>
+
+        <div class="form-group-ios">
+          <label>Select Course Stream <span style="color: #FF3B30;">*</span></label>
+          <select name="course" id="modalCourseSelect" class="form-control-ios" required>
+            <option value="">-- Select Course Stream --</option>
+            <option value="Medical (MBBS, BDS, BAMS, BHMS)">Medical (MBBS, BDS, BAMS, BHMS)</option>
+            <option value="Para Medical (DMLT, BMLT, BPT, BHM)">Para Medical (DMLT, BMLT, BPT, BHM)</option>
+            <option value="Engineering (Polytechnic, B.Tech, M.Tech)">Engineering (Polytechnic, B.Tech, M.Tech)</option>
+            <option value="Hotel Management (BHM, BHMCT)">Hotel Management (BHM, BHMCT)</option>
+            <option value="Fashion Designing (B.Sc Fashion Designing)">Fashion Designing (B.Sc Fashion Designing)
+            </option>
+            <option value="Pharmacy (D.Pharma, B.Pharma, M.Pharma)">Pharmacy (D.Pharma, B.Pharma, M.Pharma)</option>
+            <option value="Agriculture (B.Tech Agri, B.Sc Agri, M.Sc Agri)">Agriculture (B.Tech Agri, B.Sc Agri, M.Sc
+              Agri)</option>
+            <option value="Computer & Software (BCA, MCA, B.Sc.IT, M.Sc IT)">Computer &amp; Software (BCA, MCA, B.Sc.IT,
+              M.Sc IT)</option>
+            <option value="Media & Communication (BJMC, MJMC)">Media &amp; Communication (BJMC, MJMC)</option>
+            <option value="Architecture (B.Arch, M.Arch)">Architecture (B.Arch, M.Arch)</option>
+            <option value="Nursing (ANM, GNM, B.Sc Nursing)">Nursing (ANM, GNM, B.Sc Nursing)</option>
+            <option value="Education (D.El.Ed, D.Lib, B.Ed, B.Lib, M.Ed, M.Lib)">Education (D.El.Ed, D.Lib, B.Ed, B.Lib,
+              M.Ed, M.Lib)</option>
+            <option value="Management (BBA, MBA, PGDM, MIB)">Management (BBA, MBA, PGDM, MIB)</option>
+            <option value="Law (BA.LL.B, LL.B, LL.M)">Law (BA.LL.B, LL.B, LL.M)</option>
+            <option value="General Courses (B.A, MA, B.Sc, M.Sc, B.Com, M.Com, PhD)">General Courses (B.A, MA, B.Sc,
+              M.Sc, B.Com, M.Com, PhD)</option>
+            <option value="General Courses (10th, 12th, ITI)">General Courses (10th, 12th, ITI)</option>
+          </select>
+        </div>
+
+        <div class="form-group-ios">
+          <label>Exam Score or 12th %</label>
+          <input type="text" name="score_rank" class="form-control-ios"
+            placeholder="e.g. JEE 85%, NEET 430, or 12th 72%">
+        </div>
+
+        <div class="form-group-ios">
+          <label>Preferred State or Notes</label>
+          <input type="text" name="message" class="form-control-ios" placeholder="State or college preferences...">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 0.5rem;">
+          Connect with Counsellor on WhatsApp
+        </button>
+
+        <div style="font-size: 0.78rem; color: var(--ios-text-tertiary); text-align: center; margin-top: 0.65rem;">
+          🔒 Privacy Assured: No spam. Direct call from our Lakhisarai office.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/counselling-form.js"></script>
+  <script>
+    // Lead modal handler for about.html
+    window.openLeadModal = function (courseName) {
+      const modal = document.getElementById('iosLeadModalBackdrop');
+      const select = document.getElementById('modalCourseSelect');
+      if (select && courseName && courseName !== 'General') {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.toLowerCase().includes(courseName.toLowerCase()) ||
+            select.options[i].value.toLowerCase().includes(courseName.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      modal?.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLeadModal = function () {
+      const modal = document.getElementById('iosLeadModalBackdrop');
+      modal?.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    document.getElementById('iosLeadModalBackdrop')?.addEventListener('click', function (e) {
+      if (e.target === this) window.closeLeadModal();
+    });
+  </script>
+</body>
+
+</html>

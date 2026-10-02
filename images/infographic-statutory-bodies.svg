@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- AICTE -->
+  <g transform="translate(20, 20)">
+    <rect width="140" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="70" cy="50" r="24" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5" />
+    <text x="70" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" fill="#1D4ED8" text-anchor="middle">AICTE</text>
+    <text x="70" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Engineering</text>
+    <text x="70" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">B.Tech / M.Tech</text>
+    <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Polytechnic</text>
+    <rect x="25" y="165" width="90" height="20" rx="10" fill="#EFF6FF" />
+    <text x="70" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#1D4ED8" text-anchor="middle">Verified ✓</text>
+  </g>
+
+  <!-- NMC -->
+  <g transform="translate(180, 20)">
+    <rect width="140" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="70" cy="50" r="24" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5" />
+    <text x="70" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" fill="#DC2626" text-anchor="middle">NMC</text>
+    <text x="70" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Medical</text>
+    <text x="70" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">MBBS India</text>
+    <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">MBBS Abroad</text>
+    <rect x="25" y="165" width="90" height="20" rx="10" fill="#FEF2F2" />
+    <text x="70" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#DC2626" text-anchor="middle">Verified ✓</text>
+  </g>
+
+  <!-- INC -->
+  <g transform="translate(340, 20)">
+    <rect width="140" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="70" cy="50" r="24" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5" />
+    <text x="70" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" fill="#15803D" text-anchor="middle">INC</text>
+    <text x="70" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Nursing</text>
+    <text x="70" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">B.Sc Nursing</text>
+    <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">GNM Clinical</text>
+    <rect x="25" y="165" width="90" height="20" rx="10" fill="#F0FDF4" />
+    <text x="70" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Verified ✓</text>
+  </g>
+
+  <!-- PCI -->
+  <g transform="translate(500, 20)">
+    <rect width="140" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="70" cy="50" r="24" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" />
+    <text x="70" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" fill="#059669" text-anchor="middle">PCI</text>
+    <text x="70" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Pharmacy</text>
+    <text x="70" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">B.Pharm</text>
+    <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">D.Pharm Drug Lic</text>
+    <rect x="25" y="165" width="90" height="20" rx="10" fill="#ECFDF5" />
+    <text x="70" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#059669" text-anchor="middle">Verified ✓</text>
+  </g>
+
+  <!-- BCI -->
+  <g transform="translate(660, 20)">
+    <rect width="140" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="70" cy="50" r="24" fill="#FDF4FF" stroke="#D946EF" stroke-width="1.5" />
+    <text x="70" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="800" fill="#A21CAF" text-anchor="middle">BCI</text>
+    <text x="70" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Law</text>
+    <text x="70" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">3-Year LLB</text>
+    <text x="70" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">5-Yr BA/BBA LLB</text>
+    <rect x="25" y="165" width="90" height="20" rx="10" fill="#FDF4FF" />
+    <text x="70" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#A21CAF" text-anchor="middle">Verified ✓</text>
+  </g>
+
+  <!-- UGC / NAAC -->
+  <g transform="translate(820, 20)">
+    <rect width="160" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#badgeShadow)" />
+    <circle cx="80" cy="50" r="24" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="80" y="56" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800" fill="#B45309" text-anchor="middle">UGC</text>
+    <text x="80" y="105" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">Universities</text>
+    <text x="80" y="125" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Central, State &amp;</text>
+    <text x="80" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Autonomous NAAC</text>
+    <rect x="35" y="165" width="90" height="20" rx="10" fill="#FEF3C7" />
+    <text x="80" y="179" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">Verified ✓</text>
+  </g>
+</svg>

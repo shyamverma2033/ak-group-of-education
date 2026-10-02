@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <filter id="softCardShadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- Stage 1 -->
+  <g transform="translate(15, 20)">
+    <rect width="180" height="270" rx="20" fill="url(#bgCardGrad)" stroke="#E2E8F0" stroke-width="1.5" filter="url(#softCardShadow)" />
+    <circle cx="90" cy="55" r="26" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2" />
+    <text x="90" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#1D4ED8" text-anchor="middle">01</text>
+    <text x="90" y="115" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Profile &amp; Merit</text>
+    <text x="90" y="145" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Evaluation of NEET,</text>
+    <text x="90" y="165" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">JEE, CLAT, CAT or</text>
+    <text x="90" y="185" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">12th Board marks</text>
+    <rect x="25" y="215" width="130" height="30" rx="15" fill="#EFF6FF" />
+    <text x="90" y="235" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="#1D4ED8" text-anchor="middle">Score Analysis</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 205,150 L 225,150" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="225,145 235,150 225,155" fill="#94A3B8" />
+
+  <!-- Stage 2 -->
+  <g transform="translate(245, 20)">
+    <rect width="180" height="270" rx="20" fill="url(#bgCardGrad)" stroke="#E2E8F0" stroke-width="1.5" filter="url(#softCardShadow)" />
+    <circle cx="90" cy="55" r="26" fill="#F0FDF4" stroke="#22C55E" stroke-width="2" />
+    <text x="90" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#15803D" text-anchor="middle">02</text>
+    <text x="90" y="115" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Quota &amp; Domicile</text>
+    <text x="90" y="145" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">15% AIQ vs 85% State</text>
+    <text x="90" y="165" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">quota categorization</text>
+    <text x="90" y="185" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">&amp; category status</text>
+    <rect x="25" y="215" width="130" height="30" rx="15" fill="#F0FDF4" />
+    <text x="90" y="235" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="#15803D" text-anchor="middle">Eligibility Match</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 435,150 L 455,150" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="455,145 465,150 455,155" fill="#94A3B8" />
+
+  <!-- Stage 3 -->
+  <g transform="translate(475, 20)">
+    <rect width="180" height="270" rx="20" fill="url(#bgCardGrad)" stroke="#E2E8F0" stroke-width="1.5" filter="url(#softCardShadow)" />
+    <circle cx="90" cy="55" r="26" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" />
+    <text x="90" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">03</text>
+    <text x="90" y="115" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Choice Sequence</text>
+    <text x="90" y="145" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Strategized college</text>
+    <text x="90" y="165" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">preference ordering to</text>
+    <text x="90" y="185" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">maximize allocation</text>
+    <rect x="25" y="215" width="130" height="30" rx="15" fill="#FEF3C7" />
+    <text x="90" y="235" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="600" fill="#B45309" text-anchor="middle">Choice Order Map</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 665,150 L 685,150" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="4,4" />
+  <polygon points="685,145 695,150 685,155" fill="#94A3B8" />
+
+  <!-- Stage 4 -->
+  <g transform="translate(705, 20)">
+    <rect width="270" height="270" rx="20" fill="url(#bgCardGrad)" stroke="#CBD5E1" stroke-width="2" filter="url(#softCardShadow)" />
+    <circle cx="135" cy="55" r="26" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2" />
+    <text x="135" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#6D28D9" text-anchor="middle">04</text>
+    <text x="135" y="115" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="700" fill="#0F172A" text-anchor="middle">Allotment &amp; Induction</text>
+    <text x="135" y="145" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Official provisional letter,</text>
+    <text x="135" y="165" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">direct fee payment to college &amp;</text>
+    <text x="135" y="185" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">complete reporting support</text>
+    <rect x="45" y="215" width="180" height="30" rx="15" fill="#0F224A" />
+    <text x="135" y="235" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Verified Enrollment ✓</text>
+  </g>
+</svg>

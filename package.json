@@ -1,0 +1,21 @@
+{
+  "name": "ak-group-of-education",
+  "version": "1.0.0",
+  "description": "Official High-Converting Admission Counselling Web Platform for A K Group of Education, Lakhisarai, Bihar.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s .",
+    "dev": "npx serve -p 3000 .",
+    "preview": "npx http-server -p 8080 -c-1 ."
+  },
+  "keywords": [
+    "admission-counselling",
+    "btech-admission",
+    "nursing-admission",
+    "bpharm-admission",
+    "mbbs-admission",
+    "lakhisarai-bihar"
+  ],
+  "author": "A K Group of Education",
+  "license": "ISC"
+}

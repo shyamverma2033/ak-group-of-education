@@ -1,0 +1,11 @@
+/courses/mbbs        /courses/mbbs.html       200
+/courses/btech       /courses/btech.html      200
+/courses/nursing     /courses/nursing.html    200
+/courses/bpharm      /courses/bpharm.html     200
+/courses/bca         /courses/bca.html        200
+/courses/bds         /courses/bds.html        200
+/about               /about.html              200
+/contact             /contact.html            200
+/privacy-policy      /privacy-policy.html     200
+/terms               /terms.html              200
+/*                   /404.html                404
